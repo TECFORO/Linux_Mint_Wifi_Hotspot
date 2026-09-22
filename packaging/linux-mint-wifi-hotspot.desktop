@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Linux Mint Wifi Hotspot
+GenericName=WiFi Connection Sharing
+Comment=Experimental: share your WiFi while staying online (Mint / Ubuntu / Debian)
+Exec=/opt/linux-mint-wifi-hotspot/bin/wifi-hotspot-gui
+Icon=network-wireless-hotspot
+Terminal=false
+Categories=Network;Settings;System;
+Keywords=hotspot;wifi;ap;share;tether;mint;
+StartupNotify=true

@@ -1,0 +1,23 @@
+# Linux_Mint_Wifi_Hotspot — system config (installed copy)
+# Only active while user starts it. Stop/disconnect restores pre-AP WiFi.
+
+WIFI_IFACE=
+AP_IFACE=ap0
+HOTSPOT_SSID=LinuxMint-Hotspot
+HOTSPOT_PASSWORD=ChangeMe-Use-A-Strong-Password
+HOTSPOT_CON_NAME=LinuxMint-Share
+
+AP_GATEWAY=192.168.12.1
+AP_DHCP_START=192.168.12.10
+AP_DHCP_END=192.168.12.100
+
+COUNTRY_CODE=FR
+
+ENABLE_WATCHDOG=1
+CHECK_INTERVAL=5
+FAIL_THRESHOLD=1
+STARTUP_VERIFY_TIMEOUT=30
+AP_TEARDOWN_SETTLE=2
+
+STATE_DIR=
+LOG_FILE=

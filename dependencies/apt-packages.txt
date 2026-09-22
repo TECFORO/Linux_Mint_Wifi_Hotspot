@@ -1,0 +1,18 @@
+# Runtime packages required by Linux_Mint_Wifi_Hotspot (Mint / Ubuntu / Debian)
+# One package name per line. install.sh reads this file.
+#
+# Update this list when Mint/Ubuntu base packages are renamed or split.
+# See ../docs/COMPATIBILITY.md for version-specific notes.
+
+hostapd
+dnsmasq
+iw
+iproute2
+iptables
+network-manager
+policykit-1
+python3
+python3-gi
+gir1.2-gtk-3.0
+rfkill
+iputils-ping

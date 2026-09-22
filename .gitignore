@@ -1,0 +1,6 @@
+*.pyc
+__pycache__/
+.local/
+*.log
+wifi-hotspot.conf
+!.gitkeep

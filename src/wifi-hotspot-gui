@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Launcher for the GTK UI (installed to /opt/linux-mint-wifi-hotspot/bin/wifi-hotspot-gui)
+set -euo pipefail
+ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+export WIFI_HOTSPOT_ROOT="$ROOT"
+exec python3 "$ROOT/bin/wifi-hotspot-gui.py" "$@"

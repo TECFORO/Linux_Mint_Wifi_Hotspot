@@ -1,0 +1,7 @@
+// Allow the active local user to start/stop Linux_Mint_Wifi_Hotspot without a password.
+polkit.addRule(function (action, subject) {
+  if (action.id === "com.local.linux-mint-wifi-hotspot" &&
+      subject.local && subject.active) {
+    return polkit.Result.YES;
+  }
+});

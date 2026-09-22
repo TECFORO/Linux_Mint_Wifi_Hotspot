@@ -1,0 +1,10 @@
+[Unit]
+Description=Restore Linux Mint Wifi Hotspot uplink if a session ended uncleanly
+ConditionPathExists=@USER_HOME@/.local/share/linux-mint-wifi-hotspot/state.env
+
+[Service]
+Type=oneshot
+ExecStart=@PREFIX@/bin/wifi-hotspot.sh restore
+
+[Install]
+WantedBy=default.target

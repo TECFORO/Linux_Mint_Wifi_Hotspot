@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE policyconfig PUBLIC
+ "-//freedesktop//DTD PolicyKit Policy Configuration 1.0//EN"
+ "http://www.freedesktop.org/standards/PolicyKit/1.0/policyconfig.dtd">
+<policyconfig>
+  <vendor>Linux_Mint_Wifi_Hotspot</vendor>
+  <action id="com.local.linux-mint-wifi-hotspot">
+    <description>Control Linux Mint Wifi Hotspot</description>
+    <message>Authentication is required to start or stop Linux Mint Wifi Hotspot</message>
+    <icon_name>network-wireless-hotspot</icon_name>
+    <defaults>
+      <allow_any>no</allow_any>
+      <allow_inactive>auth_admin</allow_inactive>
+      <allow_active>yes</allow_active>
+    </defaults>
+    <annotate key="org.freedesktop.policykit.exec.path">/opt/linux-mint-wifi-hotspot/bin/wifi-hotspot.sh</annotate>
+    <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
+  </action>
+</policyconfig>

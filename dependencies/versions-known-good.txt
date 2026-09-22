@@ -1,0 +1,22 @@
+# Known-good dependency versions on the machine where concurrent AP was verified.
+# Format: package\tversion
+# Refresh this file after validating a new Linux Mint release (see docs/COMPATIBILITY.md).
+
+# Distro baseline
+linuxmint	22.3
+ubuntu_codename	noble
+
+# Packages (from `dpkg -l` on a working Mint 22.3 / Zena host)
+hostapd	2:2.10-21ubuntu0.4
+dnsmasq	2.90-2ubuntu0.4
+iw	6.7-1build1
+iptables	1.8.10-3ubuntu2
+network-manager	1.46.0-1ubuntu2.8
+policykit-1	124-2ubuntu1.24.04.3
+python3-gi	3.48.2-1
+gir1.2-gtk-3.0	3.24.41-4ubuntu1.3
+
+# WiFi chip / driver notes for the reference machine
+wifi_driver	rtw89_8852ae
+wifi_chip	RTL8852AE
+concurrent_ap	managed+AP same channel (#channels <= 1)
