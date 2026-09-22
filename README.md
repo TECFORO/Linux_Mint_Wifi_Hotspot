@@ -68,48 +68,6 @@ sudo ./uninstall.sh
 sudo ./uninstall.sh --purge-deps
 ```
 
-### Layout
-
-| Path | Purpose |
-|------|---------|
-| `src/` | Backend + GTK UI |
-| `dependencies/` | apt list + known-good versions |
-| `docs/COMPATIBILITY.md` | Upgrade / breakage log |
-| `packaging/` | menu entry, PolicyKit, optional systemd unit |
-| `install.sh` / `uninstall.sh` | System installer |
-| `README.md` | This page (GitHub + humans) |
-| `LICENSE` | MIT |
-
----
-
-## Publishing on GitHub (simple path)
-
-You only upload **this folder** (`Linux_Mint_Wifi_Hotspot`), not your whole Desktop/`Software` tree.
-
-1. Create a free account at [github.com](https://github.com) if needed.
-2. Click **New repository**.
-3. Repository name: `Linux_Mint_Wifi_Hotspot` (same as this folder).
-4. Description: e.g. `Experimental concurrent Wi-Fi hotspot for Linux Mint / Ubuntu / Debian`.
-5. Public → **Create repository** (do **not** add a README on the website; you already have one).
-6. On your PC, in a terminal:
-
-```bash
-cd /home/ltlg/Desktop/Software/Linux_Mint_Wifi_Hotspot
-git init
-git add .
-git commit -m "Initial release: Linux_Mint_Wifi_Hotspot experimental"
-git branch -M main
-git remote add origin https://github.com/YOUR_USERNAME/Linux_Mint_Wifi_Hotspot.git
-git push -u origin main
-```
-
-Replace `YOUR_USERNAME` with your GitHub username. GitHub will ask you to sign in (browser or token).
-
-After the push, the README you see here **is** the front page of the repo. Visitors clone or download ZIP, then run `sudo ./install.sh`.
-
-Optional later: **Releases** → create tag `v1.4.0` matching the `VERSION` file.
-
----
 
 ## License
 
